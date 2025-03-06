@@ -21,6 +21,8 @@ p {
     padding-left:15px;
     padding-right:200px;
     line-height: 1.5rem;
+    font-family: "Jost", serif;
+    font-size: medium;
 }
 a:link {
     color:blue;
