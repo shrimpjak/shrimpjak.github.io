@@ -1,0 +1,21 @@
+@media only screen and (orientation: portrait) {
+
+    li {
+        border: 2px solid black;
+        display: inline;
+        margin: 10px;
+        padding: 5px;
+        height: 20px;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+
+    li {
+        border: 2px solid purple;
+        display: inline;
+        margin: 10px;
+        padding: 5px;
+        height: 20px;
+    }
+}
