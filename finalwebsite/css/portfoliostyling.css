@@ -10,7 +10,7 @@
 .wrapper {
     display: grid;
     grid-template: 7.5vh 7.5vh 40vh 40vh / 50vw 50vw;
-    background-color: #f0dcb6;
+    background-color: #F0D6B0;
     font-family: "Inter", sans-serif;
 }
 
