@@ -286,6 +286,7 @@ a.jsampleheader:hover {
 .workhis {
     grid-column: 2 / 3;
     padding: 5px;
+    padding-right: 15px;
 }
 
 .rhead {
