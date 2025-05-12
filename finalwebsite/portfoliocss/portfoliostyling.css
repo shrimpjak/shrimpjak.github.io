@@ -190,13 +190,35 @@ footer {
 .eduskills {
     padding: 5px;
     grid-column: 1 / 2;
+    overflow: hidden;
 }
 
 .workhis {
     grid-column: 2 / 3;
     padding: 5px;
+    overflow: hidden;
 }
 
 .rhead {
     text-align: center;
+}
+
+/** REFERENCES PAGE **/
+
+.referenceswrapper {
+    display: grid;
+    grid-template: 7.5vh 7.5vh 80vh / 100vw;
+    font-family: "Inter", sans-serif;
+}
+
+.reftext {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    text-align: center;
+    align-content: center;
+    list-style-position: inside;
+}
+
+.reflist {
+    list-style-type: none;
 }
