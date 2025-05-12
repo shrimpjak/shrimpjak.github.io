@@ -1,0 +1,316 @@
+/** UNIVERSAL STYLING **/
+
+.wrapper {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.wrapper::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.inter-portfolio {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #F9D3B0;
+   
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+      grid-template: 7.5vh 7.5vh 60vh 20vh / 100vw; /* Single column on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sampleswrapper {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .referenceswrapper {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resumewrapper {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+nav {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    background-color: #8096aa;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    list-style-type: none;
+    background-color: #8096aa;
+    margin: 1rem;
+}
+
+nav a {
+    color: black;
+}
+
+.univheader {
+    display: grid;
+    background-color: #8096aa;
+    align-content: center;
+    text-align: left;
+    padding: 15px;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+}
+
+footer {
+    grid-column: 1 / -1;
+    height: 40px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footert {
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+/** LANDING PAGE/INDEX.html FORMATTING **/
+
+.wrapper {
+    display: grid;
+    grid-template: 7.5vh 7.5vh 85vh / 50vw 50vw;
+    background-color: #F9D3B0;
+    font-family: "Inter", sans-serif;
+
+}
+
+.landingbiowrapper {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    background-color: #F9D3B0;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    text-align: center;
+    align-content: center;
+} 
+
+.responsiveimg {
+    display: block;
+    margin: auto;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+}
+
+.hscapwrap {
+    text-align: center;
+    padding-bottom: 5vh;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+}
+
+a.headshotcaption {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+a.headshotcaption:hover {
+    color: #ffffff;
+    background-color: black;
+}
+
+@media all and (max-width: 30em){
+    a.headshotcaption{
+        display: block;
+        padding-left: 50%;
+    }
+}
+
+.landingbiotext {
+    margin: 10px;
+    text-align: center;
+    display: block;
+}
+
+.landingbiophoto {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    background-color: #778796;
+    object-fit: contain;
+    display: grid;
+    grid-template: 80% 20% / 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+/** WRITING SAMPLES INDEX PAGE **/
+
+.sampleswrapper {
+    display: grid;
+    grid-template: 7.5vh 7.5vh 25vh 60vh / 100vw;
+    font-family: "Inter", sans-serif;
+    background-color: #F9D3B0;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.grantsamplediv {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    align-content: center;
+    text-align: center;
+    overflow:scroll;
+    overflow-x:hidden;
+    scrollbar-width: none;
+}
+
+.journalisticsamples {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    align-content: center;
+    text-align: center;
+    overflow:scroll;
+    overflow-x:hidden;
+    scrollbar-width: none;
+}
+
+
+/** nice looking buttons for sample indexes **/
+
+
+a.samplegrantheader {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+a.samplegrantheader:hover {
+    color: #ffffff;
+    background-color: black;
+}
+
+@media all and (max-width: 30em){
+    a.samplegrantheader{
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+a.jsampleheader {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+a.jsampleheader:hover {
+    color: #ffffff;
+    background-color: black;
+}
+
+@media all and (max-width: 30em){
+    a.jsampleheader{
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+/** RESUME PAGE **/
+
+.resumewrapper {
+    display: grid;
+    grid-template: 7.5vh 7.5vh 80vh / 50vw 50vw;
+    font-family: "Inter", sans-serif;
+    background-color: #F9D3B0;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 40px;
+    scrollbar-width: none;
+}
+
+.eduskills {
+    padding: 5px;
+    grid-column: 1 / 2;
+}
+
+.workhis {
+    grid-column: 2 / 3;
+    padding: 5px;
+}
+
+.rhead {
+    text-align: center;
+}
+
+/** REFERENCES PAGE **/
+
+.referenceswrapper {
+    display: grid;
+    grid-template: 7.5vh 7.5vh 80vh / 100vw;
+    font-family: "Inter", sans-serif;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.reftext {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    text-align: center;
+    align-content: center;
+    list-style-position: inside;
+}
+
+.reflist {
+    list-style-type: none;
+}
